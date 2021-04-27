@@ -1,3 +1,3 @@
-# pogi bear
+# memorama
 
-ola
+este es un memorama para aprender scrum
