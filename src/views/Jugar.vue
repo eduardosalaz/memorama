@@ -1,19 +1,18 @@
 <template>
-  <jugar/>
-  <router-view/>
+  <jugar-component/>
 </template>
 
 
 <script>
 // @ is an alias to /src
 
-import jugar from '@/components/jugar.vue'
+import jugarComponent from '@/components/jugarComponent.vue'
 
 export default 
 {
   name: 'Jugar',
   components: {
-    jugar
+    jugarComponent
   }
 }
 

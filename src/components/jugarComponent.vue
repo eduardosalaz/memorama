@@ -59,3 +59,10 @@
 }
 
 </style>
+
+<script>
+export default{
+    name: 'jugarComponent'
+}
+</script>
+
