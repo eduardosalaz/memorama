@@ -17,7 +17,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: white;
   background-color: #DFE8FB;
 }
 
@@ -25,13 +24,14 @@
   padding: 0px;
 }
 
-#nav a {
+
+/* #nav a {
     color: #FFFFFF;
 }  
 
 #a {
     color: #FFFFFF;
-}  
+}   */
 
 /* #nav a.router-link-exact-active {
 } */
@@ -55,7 +55,8 @@ export default
   components: {
     appnavbar,
     
-  }
+  },
+
 }
 
 
