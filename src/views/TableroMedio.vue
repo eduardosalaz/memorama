@@ -1,6 +1,6 @@
 <template>
     <tablero-component/>
-    <section class="game-boardD">
+    <section class="game-boardM">
         <Card 
         v-for="(card,index) in cardList"
         :key="`card-${index}`"
@@ -13,17 +13,16 @@
         />
     </section>
     <h2>{{status}}</h2>
-    <h2>{{tiempo}}</h2>
     <button @click="restartGame"> restart Game </button>
     
 </template>
 
 <style>
 
-.game-boardD {
+.game-boardM {
     display:grid;
-    grid-template-columns: 200px 200px 200px 200px 200px 200px ;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px ;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     justify-content: center;
@@ -45,7 +44,7 @@ export default
   setup(){
     const cardList = ref([])
     const userSelection = ref([])
-    
+
     const status = computed(() => {
       if(remainingPairs.value ===0) {
         this.$router.push('/Ganador')
@@ -221,135 +220,7 @@ export default
         matched:false,
         text:"Es un mecanismo sencillo y rápido que se puede utilizar como práctica de estimación, así como técnica general de formación de consenso colectivo.  "
       })
-       cardList.value.push({
-        value:10,
-        visible:false,
-        position:20,
-        matched:false,
-        text:"Tareas"
-      })
-      cardList.value.push({
-        value:10,
-        visible:false,
-        position:21,
-        matched:false,
-        text:"Son no-entregables, o aspectos de los que el Dueño de Producto no se preocupa.  "
-      })
-      cardList.value.push({
-        value:11,
-        visible:false,
-        position:22,
-        matched:false,
-        text:"Historias"
-      })
-      cardList.value.push({
-        value:11,
-        visible:false,
-        position:23,
-        matched:false,
-        text:"Son entregables de los que el Dueño de Producto se preocupa. "
-      })
-       cardList.value.push({
-        value:12,
-        visible:false,
-        position:24,
-        matched:false,
-        text:"Notas"
-      })
-      cardList.value.push({
-        value:12,
-        visible:false,
-        position:25,
-        matched:false,
-        text:"Cualquier otra información, clarificación, referencia a otras fuentes de información, etc. Normalmente muy breve."
-      })
-      cardList.value.push({
-        value:13,
-        visible:false,
-        position:26,
-        matched:false,
-        text:"Scrum"
-      })
-      cardList.value.push({
-        value:13,
-        visible:false,
-        position:27,
-        matched:false,
-        text:"Proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente"
-      })
-      cardList.value.push({
-        value:14,
-        visible:false,
-        position:28,
-        matched:false,
-        text:"Meta del sprint"
-      })
-      cardList.value.push({
-        value:14,
-        visible:false,
-        position:29,
-        matched:false,
-        text:"La meta de Sprint debería responder a la pregunta fundamental “¿Por qué hacemos este Sprint en vez de irnos todos de vacaciones? "
-      })
-      cardList.value.push({
-        value:15,
-        visible:false,
-        position:30,
-        matched:false,
-        text:"Pila del sprint"
-      })
-      cardList.value.push({
-        value:15,
-        visible:false,
-        position:31,
-        matched:false,
-        text:"Representa las historias a las que el equipo se compromete durante este Sprint.  "
-      })
-      
-      cardList.value.push({
-        value:16,
-        visible:false,
-        position:32,
-        matched:false,
-        text:"Planning poker"
-      })
-      cardList.value.push({
-        value:16,
-        visible:false,
-        position:33,
-        matched:false,
-        text:"Técnica para estimar el tiempo de las historias, donde todos los equipos se ven involucrados "
-      })
-      cardList.value.push({
-        value:17,
-        visible:false,
-        position:34,
-        matched:false,
-        text:"Umbral de aceptación"
-      })
-      cardList.value.push({
-        value:17,
-        visible:false,
-        position:35,
-        matched:false,
-        text:"Una clasificación de qué significan los niveles de importancia de la Pila del producto (en términos de contrato)  "
-      })
-      /*
-      cardList.value.push({
-        value:18,
-        visible:false,
-        position:36,
-        matched:false,
-        text:"Scrum master"
-      })
-      cardList.value.push({
-        value:18,
-        visible:false,
-        position:37,
-        matched:false,
-        text:"Se asegura de que el framework Scrum se desarrolle correctamente.  "
-      })
-      */
+
     cardList.value = _.shuffle(cardList.value)
     cardList.value = cardList.value.map((card,index) => {
         return{

@@ -1,4 +1,5 @@
 <template>
+
 <div class="app">
   <appnavbar :name="$route.name"/>
 </div>
@@ -17,6 +18,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #DFE8FB;
+  min-height: 100%;
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+body {
   background-color: #DFE8FB;
 }
 

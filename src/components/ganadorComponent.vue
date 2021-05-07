@@ -24,7 +24,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="container">
-                    <router-link to = "/perdedor"> <button type="button" class="btn btn-primary" style="background-color: #5AB9EA; border-color: #5AB9EA">Volver a jugar</button> </router-link>
+                    <router-link to = "/jugar"> <button type="button" class="btn btn-primary" style="background-color: #5AB9EA; border-color: #5AB9EA">Volver a jugar</button> </router-link>
                 </div>
             </div>
         </div>

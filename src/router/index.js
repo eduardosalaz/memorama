@@ -8,6 +8,8 @@ import Acerca from '../views/Acerca.vue';
 import Ganador from '../views/Ganador.vue';
 import Perdedor from '../views/Perdedor.vue';
 import Tablero from '../views/Tablero.vue';
+import TableroFacil from '../views/TableroFacil.vue';
+import TableroMedio from '../views/TableroMedio.vue';
 
 const routes = [
   {
@@ -62,7 +64,16 @@ const routes = [
     name: 'tablero',
     component: Tablero
   },
-
+  {
+    path: '/tableroFacil',
+    name: 'tableroFacil',
+    component: TableroFacil
+  },
+  {
+    path: '/tableroMedio',
+    name: 'tableroMedio',
+    component: TableroMedio
+  }
 ]
 
 const router = createRouter({
