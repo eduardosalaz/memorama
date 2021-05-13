@@ -1,19 +1,21 @@
 <template>
-  <pmi-component/>
+  <conceptoPMI/>
 </template>
 
 
 <script>
+import conceptoPMI from '../components/conceptoPMI.vue'
 // @ is an alias to /src
 
-import pmiComponent from '@/components/pmiComponent.vue'
+
 
 export default 
 {
   name: 'PMI',
   components: {
-    pmiComponent
+    conceptoPMI
   }
 }
+    
 
 </script>

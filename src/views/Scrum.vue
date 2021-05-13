@@ -1,18 +1,20 @@
 <template>
-  <scrum-component/>
+  
+  <concepto/>
 </template>
 
 
 <script>
 // @ is an alias to /src
 
-import scrumComponent from '@/components/scrumComponent.vue'
+
+import concepto from '@/components/concepto.vue'
 
 export default 
 {
   name: 'Scrum',
   components: {
-    scrumComponent
+    concepto
   }
 }
 

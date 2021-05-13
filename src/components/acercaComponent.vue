@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="container">
-                   <h1 style="font-size: 100px; line-height: 136px;">Editorial Porrúa</h1>
+                   <h1 style="font-size: 100px; line-height: 136px;">Editorial Amalia</h1>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
     <div v-if="visible" class="card-face is-front"> 
             {{value}}-{{text}}
             <img v-if="imgVisible" :src="`/imgMemo/${value}.png`" :alt ="imgName" class="imgStyle">
-            <img v-if="matched" src="/imgMemo/bochi sit.webp" :alt ="imgName" class="imgStyle">
+            <!-- <img v-if="matched" src="/imgMemo/bochi sit.webp" :alt ="imgName" class="imgStyle"> -->
     </div>    
      <div v-else class="card-face is-back"> 
              
