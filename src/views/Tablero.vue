@@ -26,7 +26,7 @@
     <h2 style="color:#DFE8FB;">{{status}}</h2>
     <h2> Tu tiempo es: </h2>
     <h3 ref="tiemp">tiempo: {{}}</h3>
-    <button @click="restartGame"> restart Game </button>
+    <!--<button @click="restartGame"> restart Game </button> -->
     
 </template>
 
