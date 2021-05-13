@@ -247,7 +247,7 @@ cardList.value.push({
         visible:false,
         position:17,
         matched:false,
-        text:"Es un término colectivo que incluye a clientes, usuarios y patrocinadores que con frecuencia interactúan con el equipo principal de Scrum e influyen en el proyecto durante todo el proceso de desarrollo de productos.  ",
+        text:"término que incluye a clientes, usuarios y patrocinadores que con frecuencia interactúan con el equipo principal de Scrum e influyen en el proyecto. ",
         imgVisible:false 
       })
       cardList.value.push({

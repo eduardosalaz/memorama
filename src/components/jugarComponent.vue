@@ -11,20 +11,20 @@
         </div>
 </div>
 <div class="row">
-    <div class="container" style="background: #5AB9EA;">
-        <router-link to = "/tableroFacil"> <a class="btn btn-primary" style="background-color: #5AB9EA; border-color: #5AB9EA"> <h1>FACIL</h1> </a> </router-link>
+    <div class="container" style="">
+        <router-link to = "/tableroFacil"> <button type="button" class="btn btn-primary texto" style="background-color: #5AB9EA; border-color: #5AB9EA">FACIL</button> </router-link>
     </div>
 </div>
 
 <div class="row">
-    <div class="container" style="background: #5680E9;">
-        <router-link to = "/tableroMedio"> <a class="btn btn-primary" style="background-color: #5680E9; border-color: #5680E9"> <h1>MEDIO</h1> </a> </router-link>
+    <div class="container" style="">
+        <router-link to = "/tableroMedio"> <button type="button" class="btn btn-primary texto" style="background-color: #5680E9; border-color: #5680E9">MEDIO</button> </router-link>
     </div>
 </div>
 
 <div class="row">
-    <div class="container" style="background: #9960D0;">
-        <router-link to = "/tablero"> <a class="btn btn-primary" style="background-color: #9960D0; border-color: #9960D0"> <h1>DIFICIL</h1> </a> </router-link>
+    <div class="container" style="">
+        <router-link to = "/tablero"> <button type="button" class="btn btn-primary texto" style="background-color: #9960D0; border-color: #9960D0">DIFICIL</button> </router-link>
     </div>
 </div>
 
@@ -35,15 +35,21 @@
 
 <style scoped>
 
-.a{
+.texto{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
-
-    display: flex;
+    font-size: 40px;
+    
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+}
+.btn{
+    position: relative;
+   width: 643px;
+    height: 132px; 
+    border-radius: 20px;
 }
 
 

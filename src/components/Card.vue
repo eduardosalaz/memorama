@@ -1,7 +1,7 @@
 <template>
  <div class="Card" @click="selectCard" >
     <div v-if="visible" class="card-face is-front"> 
-            {{value}}-{{text}}
+            {{text}}
             <img v-if="imgVisible" :src="`/imgMemo/${value}.png`" :alt ="imgName" class="imgStyle">
             <!-- <img v-if="matched" src="/imgMemo/bochi sit.webp" :alt ="imgName" class="imgStyle"> -->
     </div>    
@@ -35,8 +35,8 @@
     color:white;
 }
 .imgStyle{
-    width: 160px;
-    height:160px;
+    width: 140px;
+    height:140px;
 }
 </style>
 

@@ -108,145 +108,165 @@ export default
     }
 
     
-      cardList.value.push({
-        value:0,
+    cardList.value.push({
+        value:"Picture1",
         visible:false,
         position:0,
         matched:false,
-        text:"Timeboxing"
+        text:"Timeboxing",
+        imgVisible:true
       })
       cardList.value.push({
-        value:0,
+        value:"Picture1",
         visible:false,
         position:1,
         matched:false,
-        text:"Es un mecanismo para manejar la complejidad que consiste en poner límites de tiempo a una actividad. "
+        text:"Es un mecanismo para manejar la complejidad que consiste en poner límites de tiempo a una actividad. ",
+        imgVisible:false      
       })
       cardList.value.push({
-        value:1,
+        value:"Picture2",
         visible:false,
         position:2,
         matched:false,
-        text:"Historias de Usuario"
+        text:"Historias de Usuario",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:1,
+        value:"Picture2",
         visible:false,
         position:3,
         matched:false,
-        text:"Lista priorizada de requisitos, o historias, o funcionalidades."
+        text:"Lista priorizada de requisitos, o historias, o funcionalidades.",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:2,
+        value:"Picture4",
         visible:false,
         position:4,
         matched:false,
-        text:"Story map"
+        text:"Story map",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:2,
+        value:"Picture4",
         visible:false,
         position:5,
         matched:false,
-        text:"Consiste en armar un mapa visual en el cual podamos planificar, organizar y priorizar nuestro backlog del producto."
+        text:"Consiste en armar un mapa visual en el cual podamos planificar, organizar y priorizar nuestro backlog del producto.",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:3,
+        value:"Picture5",
         visible:false,
         position:6,
         matched:false,
-        text:"Product Owner"
+        text:"Product Owner",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:3,
+        value:"Picture5",
         visible:false,
         position:7,
         matched:false,
-        text:"La principal responsabilidad en la gestión de riesgos en un proyecto recae sobre él. "
+        text:"La principal responsabilidad en la gestión de riesgos en un proyecto recae sobre él. ",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:4,
+        value:"Picture3",
         visible:false,
         position:8,
         matched:false,
-        text:"Velocidad:"
+        text:"Velocidad:",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:4,
+        value:"Picture3",
         visible:false,
         position:9,
         matched:false,
-        text:"Es un tipo especial de métrica que se utiliza para estimar la cantidad de trabajo que se puede entregar en un Sprint. "
+        text:"Es un tipo especial de métrica que se utiliza para estimar la cantidad de trabajo que se puede entregar en un Sprint. ",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:5,
+        value:"Picture6",
         visible:false,
         position:10,
         matched:false,
-        text:"Riesgos"
+        text:"Riesgos",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:5,
+        value:"Picture6",
         visible:false,
         position:6,
         matched:false,
-        text:"Son las incertidumbres relacionadas a un proyecto que podrían alterar considerablemente el resultado del proyecto de manera positiva o negativa. "
+        text:"Son las incertidumbres relacionadas a un proyecto que podrían alterar considerablemente el resultado del proyecto de manera positiva o negativa. ",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:6,
+        value:"Picture7",
         visible:false,
         position:12,
         matched:false,
-        text:"Risk Prompt List"
+        text:"Risk Prompt List",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:6,
+        value:"Picture7",
         visible:false,
         position:13,
         matched:false,
-        text:"Estas listas se utilizan para estimular el pensamiento respecto a la fuente de donde se pudieran originar los riesgos.  "
+        text:"Estas listas se utilizan para estimular el pensamiento respecto a la fuente de donde se pudieran originar los riesgos.  ",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:7,
+        value:"Picture8",
         visible:false,
         position:14,
         matched:false,
-        text:"Miembros del Equipo Scrum"
+        text:"Miembros del Equipo Scrum",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:7,
+        value:"Picture8",
         visible:false,
         position:15,
         matched:false,
-        text:"Deben estar dispuestos a aprender de los demás y de quienes tienen más experiencia.  "
+        text:"Deben estar dispuestos a aprender de los demás y de quienes tienen más experiencia.  ",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:8,
+        value:"Picture9",
         visible:false,
         position:16,
         matched:false,
-        text:"Stakeholder(s):"
+        text:"Stakeholder(s):",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:8,
+        value:"Picture9",
         visible:false,
         position:17,
         matched:false,
-        text:"Es un término colectivo que incluye a clientes, usuarios y patrocinadores que con frecuencia interactúan con el equipo principal de Scrum e influyen en el proyecto durante todo el proceso de desarrollo de productos.  "
+        text:"término que incluye a clientes, usuarios y patrocinadores que con frecuencia interactúan con el equipo principal de Scrum e influyen en el proyecto. ",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:9,
+        value:"Picture10",
         visible:false,
         position:18,
         matched:false,
-        text:"Puño de cinco (Fist of Five):"
+        text:"Puño de cinco (Fist of Five):",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:9,
+        value:"Picture10",
         visible:false,
         position:19,
         matched:false,
-        text:"Es un mecanismo sencillo y rápido que se puede utilizar como práctica de estimación, así como técnica general de formación de consenso colectivo.  "
+        text:"Es un mecanismo sencillo y rápido que se puede utilizar como práctica de estimación, así como técnica general de formación de consenso colectivo.  ",
+        imgVisible:false 
       })
 
     cardList.value = _.shuffle(cardList.value)
@@ -259,7 +279,6 @@ export default
 
         }
       })
-
     const flipCard = (payload) =>{
       cardList.value[payload.position].visible = true
 
