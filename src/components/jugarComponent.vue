@@ -1,7 +1,15 @@
 <template>
  <link rel="stylesheet" href="https://use.typekit.net/ghf3opy.css">
 
-
+<div class="container.fluid text-center" style="height:100px">
+        <div class="row">
+            <div class="col-sm-1">
+                <div class="container" style="margin-left: 30px">
+                    <router-link to = "/"> <a href=""><img src="..\assets\flecha.png" alt=""></a>  </router-link>
+                </div>
+            </div>
+        </div>
+</div>
 <div class="row">
     <div class="container" style="background: #5AB9EA;">
         <router-link to = "/tableroFacil"> <a class="btn btn-primary" style="background-color: #5AB9EA; border-color: #5AB9EA"> <h1>FACIL</h1> </a> </router-link>
