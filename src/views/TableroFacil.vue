@@ -9,10 +9,13 @@
         :value="card.value"
         :visible="card.visible"
         :position="card.position"
+        :imgVisible="card.imgVisible"
         @select-card="flipCard"
         />
     </section>
-    <h2>{{status}}</h2>
+    <!-- <h2>{{status}}</h2> -->
+    <h2> Tu tiempo es: </h2>
+    <h3 ref="tiemp">tiempo: {{}}</h3>
     <button @click="restartGame"> restart Game </button>
     
 </template>
@@ -42,9 +45,31 @@ export default
     tableroComponent,
     Card
   },
+  
+  mounted(){
+        console.log("ola");
+        const contador = ref(0);
+        
+        console.log(this.$store.getters.getTiempo);
+        console.log("ola");
+        var c = this;
+        setInterval(function(){
+          contador.value = contador.value + 1
+           console.log(contador.value);
+          c.$refs.tiemp.innerText = contador.value +" Segundos"
+          c.$store.commit('addTiempo',contador.value)
+          
+         },1000);
+          
+      
+  },
+ 
   setup(){
     const cardList = ref([])
     const userSelection = ref([])
+
+    
+    
 
     const status = computed(() => {
       if(remainingPairs.value ===0) {
@@ -80,76 +105,89 @@ export default
       })
     }
 
-    
+      
+
+
+
       cardList.value.push({
-        value:0,
+        value:"Picture1",
         visible:false,
         position:0,
         matched:false,
-        text:"Timeboxing"
+        text:"Timeboxing",
+        imgVisible:true
       })
       cardList.value.push({
-        value:0,
+        value:"Picture1",
         visible:false,
         position:1,
         matched:false,
-        text:"Es un mecanismo para manejar la complejidad que consiste en poner límites de tiempo a una actividad. "
+        text:"Es un mecanismo para manejar la complejidad que consiste en poner límites de tiempo a una actividad. ",
+        imgVisible:false      
       })
       cardList.value.push({
-        value:1,
+        value:"Picture2",
         visible:false,
         position:2,
         matched:false,
-        text:"Historias de Usuario"
+        text:"Historias de Usuario",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:1,
+        value:"Picture2",
         visible:false,
         position:3,
         matched:false,
-        text:"Lista priorizada de requisitos, o historias, o funcionalidades."
+        text:"Lista priorizada de requisitos, o historias, o funcionalidades.",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:2,
+        value:"Picture4",
         visible:false,
         position:4,
         matched:false,
-        text:"Story map"
+        text:"Story map",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:2,
+        value:"Picture4",
         visible:false,
         position:5,
         matched:false,
-        text:"Consiste en armar un mapa visual en el cual podamos planificar, organizar y priorizar nuestro backlog del producto."
+        text:"Consiste en armar un mapa visual en el cual podamos planificar, organizar y priorizar nuestro backlog del producto.",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:3,
+        value:"Picture5",
         visible:false,
         position:6,
         matched:false,
-        text:"Product Owner"
+        text:"Product Owner",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:3,
+        value:"Picture5",
         visible:false,
         position:7,
         matched:false,
-        text:"La principal responsabilidad en la gestión de riesgos en un proyecto recae sobre él. "
+        text:"La principal responsabilidad en la gestión de riesgos en un proyecto recae sobre él. ",
+        imgVisible:false 
       })
       cardList.value.push({
-        value:4,
+        value:"Picture3",
         visible:false,
         position:8,
         matched:false,
-        text:"Velocidad:"
+        text:"Velocidad:",
+        imgVisible:true 
       })
       cardList.value.push({
-        value:4,
+        value:"Picture3",
         visible:false,
         position:9,
         matched:false,
-        text:"Es un tipo especial de métrica que se utiliza para estimar la cantidad de trabajo que se puede entregar en un Sprint. "
+        text:"Es un tipo especial de métrica que se utiliza para estimar la cantidad de trabajo que se puede entregar en un Sprint. ",
+        imgVisible:false 
       })
       
 
@@ -208,7 +246,8 @@ export default
       userSelection,
       status,
       shuffleCards,
-      restartGame
+      restartGame,
+      remainingPairs
     }
   }
   

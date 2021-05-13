@@ -9,7 +9,7 @@
                    <h1 style="font-size: 100px; line-height: 136px;">¡Felicidades!</h1>
                    <h1 style="font-size: 100px; line-height: 136px;">¡Has ganado!</h1>
                    <h2>Tu tiempo</h2>
-                   <h2>00:00</h2>
+                   <h2 ref="tiempoo"> </h2>
                 </div>
             </div>
         </div>
@@ -60,8 +60,26 @@
 </style>
 
 <script>
+import {ref} from 'vue'
+
 export default{
-    name: 'ganadorComponent'
+    name: 'ganadorComponent',
+    
+    mounted(){
+        console.log("ola desde narnia");
+        console.log(this.$store.getters.getTiempo);
+        const tiempo = ref(this.$store.getters.getTiempo)
+        this.$refs.tiempoo.innerText = tiempo.value+" Segundos"
+
+        return {
+            tiempo
+        }
+    },
+    setup(){
+        console.log("ola desde SETUP");
+        
+    }
+       
 }
 </script>
 

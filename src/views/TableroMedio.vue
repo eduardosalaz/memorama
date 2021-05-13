@@ -9,10 +9,13 @@
         :value="card.value"
         :visible="card.visible"
         :position="card.position"
+        :imgVisible="card.imgVisible"
         @select-card="flipCard"
         />
     </section>
-    <h2>{{status}}</h2>
+    <!-- <h2>{{status}}</h2>-->
+    <h2> Tu tiempo es: </h2>
+    <h3 ref="tiemp">tiempo: {{}}</h3>
     <button @click="restartGame"> restart Game </button>
     
 </template>
@@ -41,6 +44,21 @@ export default
     tableroComponent,
     Card
   },
+  mounted(){
+        console.log("ola");
+        const contador = ref(0);
+        
+        console.log(this.$store.getters.getTiempo);
+        console.log("ola");
+        var c = this;
+        setInterval(function(){
+          contador.value = contador.value + 1
+           console.log(contador.value);
+          c.$refs.tiemp.innerText = contador.value +" Segundos"
+          c.$store.commit('addTiempo',contador.value)
+          
+         },1000);
+  } ,      
   setup(){
     const cardList = ref([])
     const userSelection = ref([])

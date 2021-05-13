@@ -1,5 +1,6 @@
 <template>
   <tarjeta/>
+ 
   <router-view/>
 </template>
 
