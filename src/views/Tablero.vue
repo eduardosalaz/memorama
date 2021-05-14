@@ -9,6 +9,9 @@
             </div>
         </div>
 </div>
+<div>
+<h1 class="titulo"> Encuentra todo los pares pulsando cada una de las cartas para revelar su contenido</h1>
+</div>
     <section class="game-boardD">
         <Card 
         v-for="(card,index) in cardList"
@@ -31,7 +34,10 @@
 </template>
 
 <style>
-
+.titulo{
+    font-family: Nunito Sans;
+    
+}
 .game-boardD {
     display:grid;
     grid-template-columns: 200px 200px 200px 200px 200px 200px ;

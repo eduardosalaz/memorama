@@ -10,6 +10,9 @@
             </div>
         </div>
 </div>
+<div>
+<h1 class="titulo"> Selecciona la dificultad</h1>
+</div>
 <div class="row">
     <div class="container" style="">
         <router-link to = "/tableroFacil"> <button type="button" class="btn btn-primary texto" style="background-color: #5AB9EA; border-color: #5AB9EA">FACIL</button> </router-link>
@@ -34,7 +37,10 @@
 </template>
 
 <style scoped>
-
+.titulo{
+    font-family: Nunito Sans;
+    font-size: 100px;
+}
 .texto{
     font-family: Nunito Sans;
     font-style: normal;
