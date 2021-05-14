@@ -39,7 +39,7 @@
 <style scoped>
 .titulo{
     font-family: Nunito Sans;
-    font-size: 100px;
+    font-size: 75px;
 }
 .texto{
     font-family: Nunito Sans;
