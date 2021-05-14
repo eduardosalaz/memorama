@@ -73,7 +73,7 @@ export default
     
     const status = computed(() => {
       if(remainingPairs.value ===0) {
-        this.$router.push('/Ganador')
+        this.$router.push('/ganador')
         return 'player wins!'
       } else {
         return `Remaining Pairs: ${remainingPairs.value}`
